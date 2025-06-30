@@ -19,11 +19,6 @@ namespace DVLD
             InitializeComponent();
         }
 
-        private void btnClose_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void pbLoginClose_Click(object sender, EventArgs e)
         {
             this.Close();
@@ -70,18 +65,28 @@ namespace DVLD
             clsUser User = clsUser.FindByUsernameAndPassword(txtUserName.Text.Trim() ,txtPassword.Text.Trim());
             if (User != null)
             {
-                clsGlobal.CurrentUser = User;
                 if (chkRememberMe.Checked)
                 { 
                     clsGlobal.SaveRememberMeData(User.UserName, User.Password);
                 }
                 else
                     clsGlobal.SaveRememberMeData("","");
-                MessageBox.Show("Loggeddin Successfully"+User.UserName + "  "+ User.Password );
+                if (!User.IsActive)
+                {
+
+                    txtUserName.Focus();
+                    MessageBox.Show("Inactive Username.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                clsGlobal.CurrentUser = User;
+                frmMain frm=new frmMain(this);
+                this.Hide();
+                frm.ShowDialog();
 
             }
             else
             {
+                txtUserName.Focus();
                 MessageBox.Show("Invalid username or password.", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }

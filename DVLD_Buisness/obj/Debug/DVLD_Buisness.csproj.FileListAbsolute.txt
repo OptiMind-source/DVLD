@@ -7,3 +7,12 @@ C:\Users\lenovo\source\repos\DVLD_Buisness\obj\Debug\DVLD_Buisness.csproj.CoreCo
 C:\Users\lenovo\source\repos\DVLD_Buisness\obj\Debug\DVLD_Bui.E5CEC4E3.Up2Date
 C:\Users\lenovo\source\repos\DVLD_Buisness\obj\Debug\DVLD_Buisness.dll
 C:\Users\lenovo\source\repos\DVLD_Buisness\obj\Debug\DVLD_Buisness.pdb
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\bin\Debug\DVLD_Buisness.dll
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\bin\Debug\DVLD_Buisness.pdb
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\bin\Debug\DVLD_DataAccess.dll
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\bin\Debug\DVLD_DataAccess.pdb
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\obj\Debug\DVLD_Buisness.csproj.AssemblyReference.cache
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\obj\Debug\DVLD_Buisness.csproj.CoreCompileInputs.cache
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\obj\Debug\DVLD_Bui.E5CEC4E3.Up2Date
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\obj\Debug\DVLD_Buisness.dll
+C:\Users\lenovo\Desktop\DVLD_Project\DVLD_Buisness\obj\Debug\DVLD_Buisness.pdb

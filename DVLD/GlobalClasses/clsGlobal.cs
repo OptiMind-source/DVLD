@@ -11,10 +11,10 @@ using System.Runtime.Remoting.Messaging;
 
 namespace DVLD.GlobalClasses
 {
-    public class clsGlobal
+    internal static class clsGlobal
     {
-        static public clsUser CurrentUser;
-        static public bool GetSavedLoginData(ref string UserName , ref string Password)
+        public static clsUser CurrentUser;
+        public static bool GetSavedLoginData(ref string UserName , ref string Password)
         {
             try
             {
@@ -44,7 +44,7 @@ namespace DVLD.GlobalClasses
             }
             return false;
         }
-        static public bool SaveRememberMeData(string UserName, string Password)
+        public static bool SaveRememberMeData(string UserName, string Password)
         {
             try
             {

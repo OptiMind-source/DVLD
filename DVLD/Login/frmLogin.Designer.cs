@@ -35,14 +35,17 @@
             this.txtPassword = new System.Windows.Forms.TextBox();
             this.chkRememberMe = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.pbLoginClose = new System.Windows.Forms.PictureBox();
-            this.btnClose = new System.Windows.Forms.Button();
             this.pbLoginWallpaper = new System.Windows.Forms.PictureBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLoginClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLoginWallpaper)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // lblb
@@ -68,7 +71,7 @@
             // txtUserName
             // 
             this.txtUserName.Font = new System.Drawing.Font("Tahoma", 10F);
-            this.txtUserName.Location = new System.Drawing.Point(506, 184);
+            this.txtUserName.Location = new System.Drawing.Point(535, 184);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.Size = new System.Drawing.Size(189, 28);
             this.txtUserName.TabIndex = 4;
@@ -78,7 +81,7 @@
             // 
             this.txtPassword.Font = new System.Drawing.Font("Tahoma", 10F);
             this.txtPassword.HideSelection = false;
-            this.txtPassword.Location = new System.Drawing.Point(506, 250);
+            this.txtPassword.Location = new System.Drawing.Point(535, 247);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(189, 28);
@@ -90,7 +93,7 @@
             // 
             this.chkRememberMe.AutoSize = true;
             this.chkRememberMe.Font = new System.Drawing.Font("Viner Hand ITC", 10F, System.Drawing.FontStyle.Bold);
-            this.chkRememberMe.Location = new System.Drawing.Point(496, 299);
+            this.chkRememberMe.Location = new System.Drawing.Point(525, 305);
             this.chkRememberMe.Name = "chkRememberMe";
             this.chkRememberMe.Size = new System.Drawing.Size(149, 31);
             this.chkRememberMe.TabIndex = 6;
@@ -107,6 +110,28 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Password : ";
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::DVLD.Properties.Resources.icons8_password_30;
+            this.pictureBox2.Location = new System.Drawing.Point(495, 247);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox2.TabIndex = 13;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::DVLD.Properties.Resources.icons8_person_30;
+            this.pictureBox1.Location = new System.Drawing.Point(495, 184);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(34, 35);
+            this.pictureBox1.TabIndex = 12;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
@@ -114,7 +139,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Viner Hand ITC", 10F, System.Drawing.FontStyle.Bold);
             this.btnLogin.Image = global::DVLD.Properties.Resources.icons8_login_32;
             this.btnLogin.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnLogin.Location = new System.Drawing.Point(609, 377);
+            this.btnLogin.Location = new System.Drawing.Point(591, 367);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(107, 41);
             this.btnLogin.TabIndex = 11;
@@ -126,27 +151,12 @@
             // pbLoginClose
             // 
             this.pbLoginClose.Image = global::DVLD.Properties.Resources.closeBlack32;
-            this.pbLoginClose.Location = new System.Drawing.Point(696, 0);
+            this.pbLoginClose.Location = new System.Drawing.Point(695, 0);
             this.pbLoginClose.Name = "pbLoginClose";
             this.pbLoginClose.Size = new System.Drawing.Size(39, 38);
             this.pbLoginClose.TabIndex = 9;
             this.pbLoginClose.TabStop = false;
             this.pbLoginClose.Click += new System.EventHandler(this.pbLoginClose_Click);
-            // 
-            // btnClose
-            // 
-            this.btnClose.BackColor = System.Drawing.Color.Transparent;
-            this.btnClose.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClose.Font = new System.Drawing.Font("Viner Hand ITC", 10F, System.Drawing.FontStyle.Bold);
-            this.btnClose.Image = global::DVLD.Properties.Resources.closeBlack321;
-            this.btnClose.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnClose.Location = new System.Drawing.Point(467, 377);
-            this.btnClose.Name = "btnClose";
-            this.btnClose.Size = new System.Drawing.Size(107, 41);
-            this.btnClose.TabIndex = 7;
-            this.btnClose.Text = "    Close";
-            this.btnClose.UseVisualStyleBackColor = false;
-            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // pbLoginWallpaper
             // 
@@ -159,20 +169,17 @@
             this.pbLoginWallpaper.TabIndex = 0;
             this.pbLoginWallpaper.TabStop = false;
             // 
-            // errorProvider1
-            // 
-            this.errorProvider1.ContainerControl = this;
-            // 
             // frmLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(736, 450);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pbLoginClose);
-            this.Controls.Add(this.btnClose);
             this.Controls.Add(this.chkRememberMe);
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.txtUserName);
@@ -181,11 +188,14 @@
             this.Controls.Add(this.pbLoginWallpaper);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmLogin";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLoginClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbLoginWallpaper)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,11 +209,12 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TextBox txtPassword;
         private System.Windows.Forms.CheckBox chkRememberMe;
-        private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.PictureBox pbLoginClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }
 

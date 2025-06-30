@@ -9,8 +9,8 @@ namespace DVLD_Buisness
 {
     public class clsApplication
     {
-        enum enMode { Update = 0, New = 1  };
 
+        enum enMode { Update = 0, New = 1  };
         enMode _Mode;
 
         public int ApplicationID {  get; set; }
@@ -52,7 +52,6 @@ namespace DVLD_Buisness
             this.ApplicationTypeID = ApplicationTypeID;
             this.ApplicationStatus = ApplicationStatus;
             this.CreatedByUserID = CreatedByUserID;
-
 
             _Mode=enMode.Update;
         }
